@@ -18,10 +18,10 @@ resource "azurerm_resource_group" "rg" {
   name     = "vizg-rg"
   location = "southeastasia"
 
- tags = {
+  tags = {
     Environment = "Terraform Getting Started"
-    Team = "DevOps"
- }
+    Team        = "DevOps"
+  }
 }
 
 # Create a virtual network
