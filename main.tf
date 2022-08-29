@@ -67,3 +67,10 @@ resource "azurerm_storage_container" "rg" {
   storage_account_name  = azurerm_storage_account.rg.name
   container_access_type = "blob"
 }
+
+# Create Container in azure storage
+resource "azurerm_storage_container" "ra" {
+  name                  = "vizzzzzzcontainer"
+  storage_account_name  = azurerm_storage_account.rg.name
+  container_access_type = "blob"
+}
