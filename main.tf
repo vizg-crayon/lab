@@ -9,14 +9,13 @@ terraform {
 
   required_version = ">= 1.1.0"
 
-# Create a Terraform configuration with a backend configuration bloc
-    backend "azurerm" {
-        resource_group_name  = "vizg-rg"
-        storage_account_name = "vizstorageterraform"
-        container_name       = "vizcontainer"
-        key                  = "terraform.tfstate"
-    }
-
+  # Create a Terraform configuration with a backend configuration block
+  backend "azurerm" {
+    resource_group_name  = "vizg-rg"
+    storage_account_name = "vizstorageterraform"
+    container_name       = "vizcontainer"
+    key                  = "terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
