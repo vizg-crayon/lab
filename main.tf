@@ -67,10 +67,4 @@ resource "azurerm_storage_container" "rg" {
   name                  = "vizcontainer"
   storage_account_name  = azurerm_storage_account.rg.name
   container_access_type = "blob"
-
-  tags = {
-    environment = "staging"
-    Team        = "DevOps"
-  }
-
 }
